@@ -7,7 +7,7 @@ def selection_sort(list):
         #  Find the minimum element in unsorted array
         #  Minimun index
         min_index = i 
-        for j in range(n):
+        for j in range(i+1,n):
             if(list[j] < list[min_index]):
                 min_index = j
 
@@ -27,8 +27,8 @@ def findSmallest(arr):
     smallest_index = 0 #Stores the index of the smallest value
     for i in range(1, len(arr)):
         if arr[i] < smallest:
-        smallest = arr[i]
-        smallest_index = i
+            smallest = arr[i]
+            smallest_index = i
     return smallest_index
 
 #Sorts the array
@@ -41,4 +41,5 @@ def selectionSort(arr):
         newArr.append(arr.pop(smallest))
     return newArr
 
-print selectionSort([5, 3, 6, 2, 10])
+print(selectionSort([5, 3, 6, 2, 10]))
+print(selection_sort([5, 3, 6, 2, 10]))
