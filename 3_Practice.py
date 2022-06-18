@@ -27,7 +27,7 @@ def max(list):
 # case for binary search?
 
 def binary_search(arr, low, high, x):
-     if high >= low:
+    if high >= low:
         mid = low + (high - low) // 2
         # If element is present at the middle itself
         if arr[mid] == x:
